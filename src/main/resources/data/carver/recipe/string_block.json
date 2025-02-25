@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": { "item": "minecraft:wool" },
+    "result": {
+        "id": "minecraft:string",
+        "count": 4
+    }
+}

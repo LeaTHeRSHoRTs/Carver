@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": { "item": "minecraft:cherry_planks" },
+    "result": {
+        "id": "minecraft:chiseled_bookshelf",
+        "count": 1
+    }
+}

@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "carver",
+	"version": "${version}",
+	"name": "Carver",
+	"description": "The carver adds the new feature to cut wood and various other blocks",
+	"authors": [
+		"LeaTHeR_SHoRTs"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/carver/icon.jpg",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.leathershorts.carver.Carver"
+		],
+		"client": [
+			"com.leathershorts.carver.CarverClient"
+		],
+		"fabric-datagen": [
+			"com.leathershorts.carver.CarverDataGenerator"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
