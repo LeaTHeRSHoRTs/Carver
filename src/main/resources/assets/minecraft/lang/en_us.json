@@ -1,0 +1,6 @@
+{
+  "block.minecraft.stonecutter": "Carver",
+  "container.stonecutter": "Carver",
+  "stat.minecraft.interact_with_stonecutter": "Interactions with Carver",
+  "subtitles.ui.stonecutter.take_result": "Carver used"
+}

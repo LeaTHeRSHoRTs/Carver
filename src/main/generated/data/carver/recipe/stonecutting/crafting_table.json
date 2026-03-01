@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#minecraft:planks",
+  "result": {
+    "count": 1,
+    "id": "minecraft:crafting_table"
+  }
+}
