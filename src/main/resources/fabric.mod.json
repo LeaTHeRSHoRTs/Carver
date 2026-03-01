@@ -3,37 +3,18 @@
 	"id": "carver",
 	"version": "${version}",
 	"name": "Carver",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "The carver adds the new feature to cut wood and various other blocks",
 	"authors": [
-		"Me!"
+		"LeaTHeR_SHoRTs"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
 	"license": "CC0-1.0",
 	"icon": "assets/carver/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"com.leathershorts.carver.Carver"
-		],
-		"client": [
-			"com.leathershorts.carver.CarverClient"
-		],
-		"fabric-datagen": [
-			"com.leathershorts.carver.CarverDataGenerator"
-		]
+		"fabric-datagen": [ "com.leathershorts.carver.CarverDataGenerator" ]
 	},
-	"mixins": [
-		"carver.mixins.json",
-		{
-			"config": "carver.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
-		"fabricloader": ">=0.18.4",
+		"fabricloader": ">=0.16.7",
 		"minecraft": "~1.21.2",
 		"java": ">=21",
 		"fabric-api": "*"
