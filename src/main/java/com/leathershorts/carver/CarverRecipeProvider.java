@@ -29,7 +29,7 @@ import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 
-public class CarverRecipeProvider extends FabricRecipeProvider {
+final class CarverRecipeProvider extends FabricRecipeProvider {
     public static final Logger LOGGER = LoggerFactory.getLogger("carver");
     private final Set<String> shouldTest = new HashSet<>();
 
@@ -202,12 +202,10 @@ public class CarverRecipeProvider extends FabricRecipeProvider {
             }
 
             public void offerRecipes(RecipeCategory category, Ingredient input, Map<Item, Integer> outputs) {
-                outputs.forEach((output, count) -> {
-                    this.offerRecipe(category, input, output, count);
-                });
+                outputs.forEach((output, count) -> this.offerRecipe(category, input, output, count));
             }
 
-            public void offerRecipes(RecipeCategory category, Item input, Map<Item, Integer> outputs) {
+            @Unused public void offerRecipes(RecipeCategory category, Item input, Map<Item, Integer> outputs) {
                 this.offerRecipes(category, Ingredient.ofItem(input), outputs);
             }
         };
